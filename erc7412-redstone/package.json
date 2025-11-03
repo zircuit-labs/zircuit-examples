@@ -1,0 +1,17 @@
+{
+  "name": "erc7412-foundry-example",
+  "private": true,
+  "dependencies": {
+    "@redstone-finance/erc7412": "0.9.0",
+    "@redstone-finance/on-chain-relayer": "0.9.0",
+    "viem": "1.21.4"
+  },
+  "devDependencies": {
+    "@types/jest": "30.0.0",
+    "jest": "30.1.3"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  }
+}

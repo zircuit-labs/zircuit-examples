@@ -1,0 +1,24 @@
+type Token @entity(immutable: false) {
+  id: ID!
+  name: String!
+  symbol: String!
+  decimals: Int!
+  totalSupply: BigInt!
+}
+
+type Account @entity(immutable: false) {
+  id: ID! # wallet address
+  balance: BigInt!
+  transfersFrom: [Transfer!]! @derivedFrom(field: "from")
+  transfersTo: [Transfer!]! @derivedFrom(field: "to")
+}
+
+type Transfer @entity(immutable: true) {
+  id: ID! # transaction hash + log index
+  from: Account!
+  to: Account!
+  value: BigInt!
+  timestamp: BigInt!
+  blockNumber: BigInt!
+  transactionHash: Bytes!
+}

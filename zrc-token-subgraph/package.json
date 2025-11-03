@@ -1,0 +1,19 @@
+{
+  "name": "zrc-token-subgraph",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "goldsky subgraph deploy zrc-token-subgraph/1.0.0 --path .",
+    "create-local": "graph create --node http://localhost:8020/ zrc-token-subgraph",
+    "remove-local": "graph remove --node http://localhost:8020/ zrc-token-subgraph",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 zrc-token-subgraph",
+    "test": "graph test"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.98.1",
+    "@graphprotocol/graph-ts": "0.38.2"
+  },
+  "devDependencies": { "matchstick-as": "0.6.0" }
+}
