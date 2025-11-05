@@ -1,4 +1,6 @@
-# RedStone ERC-7412 Foundry Example
+# RedStone ERC-7412 Example
+
+[![RedStone ERC-7412 Example Video](http://img.youtube.com/vi/2u2SeT60UcE/0.jpg)](https://www.youtube.com/watch?v=2u2SeT60UcE "Understanding Price Oracles and ERC-7412: A Developer’s Guide")
 
 This repository provides a comprehensive example of how to integrate [RedStone Oracles](https://redstone.finance/) into a smart contract using the [ERC-7412 standard](https://docs.redstone.finance/docs/smart-contract-devs/get-started/redstone-erc7412). The project uses a hybrid setup:
 

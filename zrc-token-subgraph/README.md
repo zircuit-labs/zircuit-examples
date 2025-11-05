@@ -1,4 +1,6 @@
-# ZRC Token Subgraph
+# ZRC Token Subgraph Example
+
+[![ZRC Token Subgraph Example Video](http://img.youtube.com/vi/apN_SxUtGX8/0.jpg)](https://www.youtube.com/watch?v=apN_SxUtGX8 "Subgraphs 101: Everything You Need to Know + Building Your First Subgraph")
 
 A subgraph for indexing ERC-20 style token activity (Transfers). It includes:
 
