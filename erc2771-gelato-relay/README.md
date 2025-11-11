@@ -1,14 +1,10 @@
 # Gelato Relay ERC2771 Sponsored Transactions
 
+## Video
+
+[![Gelato Relay ERC2771 Sponsored Transactions Video](http://img.youtube.com/vi/pEJmuOBpssw/0.jpg)](https://www.youtube.com/watch?v=pEJmuOBpssw "Gelato Relay ERC2771 Sponsored Transactions Video")
+
 This project demonstrates how to implement sponsored transactions using Gelato Relay with ERC2771 context. It allows users to interact with your dApp without paying gas fees.
-
-## Project Structure
-
-```
-├── contracts/          # Smart contracts
-├── frontend/          # React frontend application
-└── README.md
-```
 
 ## Prerequisites
 
