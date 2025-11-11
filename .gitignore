@@ -1,0 +1,42 @@
+build/
+generated/
+data/
+
+# Dependencies
+node_modules/
+jspm_packages/
+lib/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Caches
+.npm
+.eslintcache
+cache
+
+# Environment
+.env
+
+# Coverage
+coverage
+coverage.json
+
+# Build outputs
+out/
+artifacts/
+broadcast/
+
+# Typechain
+typechain/
+typechain-types/
+
+# Tests
+zrc-token-subgraph/tests/.bin/
+
+# MacOS
+.DS_Store

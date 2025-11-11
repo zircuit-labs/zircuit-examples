@@ -1,0 +1,24 @@
+[profile.default]
+src = "src"
+out = "out"
+cache_path = "cache"
+libs = ["lib"]
+test = "test"
+solc_version = "0.8.30"
+evm_version = "cancun"
+# Allow imports from node_modules (so we can use @redstone-finance/* without forge install),
+# and from forge-std once installed via `forge install foundry-rs/forge-std`.
+remappings = [
+  "@redstone-finance/=node_modules/@redstone-finance/",
+  "@openzeppelin/=node_modules/@openzeppelin/",
+  "forge-std/=lib/forge-std/src/",
+  "@chainlink/=node_modules/@chainlink/"
+]
+
+[fmt]
+line_length = 100
+multiline_func_header = "params_first"
+
+[rpc_endpoints]
+zircuit_mainnet = "https://mainnet.zircuit.com"
+garfield_testnet = "https://garfield-testnet.zircuit.com"
