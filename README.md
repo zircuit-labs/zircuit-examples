@@ -15,6 +15,7 @@ Zircuit is a fully EVM-compatible zero-knowledge rollup that combines advanced A
 
 The code in this repository serves as a practical guide for developers looking to leverage Zircuit's capabilities. It currently includes the following examples:
 
+- **[erc2771-gelato-relay](./erc2771-gelato-relay/)**: How to implement sponsored transactions using Gelato Relay with ERC2771 context on Zircuit.
 - **[erc7412-redstone](./erc7412-redstone/)**: How to integrate RedStone Oracles with a smart contract using the ERC-7412 standard on Zircuit.
 - **[zrc-token-subgraph](./zrc-token-subgraph/)**: How to index ERC-20 token transfers on Zircuit using The Graph protocol.
 

@@ -56,7 +56,7 @@ describe('ETHFeed Jest Tests', () => {
         bytecode: multicallArtifact.bytecode.object as `0x${string}`,
         account,
         chain: null, // Explicitly set chain to null for local deployment
-        args: [], // ETHFeed has no constructor args
+        args: [], // Multicall3 has no constructor args
       });
       const multicallReceipt = await publicClient.waitForTransactionReceipt({ hash: multicallHash });
       multicallAddress = multicallReceipt.contractAddress!;

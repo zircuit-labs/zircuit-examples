@@ -7,7 +7,10 @@ import {
 import { Address, BigInt, ethereum } from "@graphprotocol/graph-ts"
 import { createMockedFunction } from "matchstick-as/assembly/index"
 import { handleTransfer } from "../src/mapping"
-import { createTransferEvent } from "./token-utils"
+import { createTransferEvent, MOCK_TX_HASH } from "./token-utils"
+
+// Transfer entity ID format matches mapping.ts: txHash-logIndex
+const TRANSFER_ID = MOCK_TX_HASH.toHex() + "-1"
 
 // Default mock event address used by newMockEvent()
 const CONTRACT = Address.fromString(
@@ -62,19 +65,19 @@ describe("Mapping behavior", () => {
     assert.entityCount("Transfer", 1)
     assert.fieldEquals(
       "Transfer",
-      `${CONTRACT.toHexString()}-1`,
+      TRANSFER_ID,
       "from",
       from.toHexString()
     )
     assert.fieldEquals(
       "Transfer",
-      `${CONTRACT.toHexString()}-1`,
+      TRANSFER_ID,
       "to",
       to.toHexString()
     )
     assert.fieldEquals(
       "Transfer",
-      `${CONTRACT.toHexString()}-1`,
+      TRANSFER_ID,
       "value",
       value.toString()
     )
@@ -107,13 +110,13 @@ describe("Mapping behavior", () => {
     assert.entityCount("Transfer", 1)
     assert.fieldEquals(
       "Transfer",
-      `${CONTRACT.toHexString()}-1`,
+      TRANSFER_ID,
       "from",
       self.toHexString()
     )
     assert.fieldEquals(
       "Transfer",
-      `${CONTRACT.toHexString()}-1`,
+      TRANSFER_ID,
       "to",
       self.toHexString()
     )
